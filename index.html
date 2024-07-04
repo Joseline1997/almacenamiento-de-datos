@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingreso de Datos de Clientes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ingreso de Datos de Clientes</h1>
+    <form id="clienteForm">
+      <label for="cedula">Cédula:</label>
+      <input type="text" id="cedula" />
+      <span id="cedulaError" class="error"></span>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" />
+      <span id="direccionError" class="error"></span>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" />
+      <span id="apellidosError" class="error"></span>
+
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" />
+      <span id="nombresError" class="error"></span>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" />
+      <span id="telefonoError" class="error"></span>
+
+      <label for="correo">Correo Institucional:</label>
+      <input type="email" id="correo" />
+      <span id="correoError" class="error"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="clientesList">
+      <h2>Clientes Registrados</h2>
+      <ul id="clientesUl"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
